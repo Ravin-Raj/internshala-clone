@@ -11,7 +11,7 @@
     "posted": "2 days ago",
     "activelyHiring": true,
     "earlyApplicant": true,
-    "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Google_2026_logo.svg/1920px-Google_2026_logo.svg.png",
     "work_from_home": true,
     "part_time": false
   },
@@ -27,7 +27,7 @@
     "posted": "1 week ago",
     "activelyHiring": true,
     "earlyApplicant": false,
-    "logo": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1920px-Microsoft_logo_%282012%29.svg.png",
     "work_from_home": false,
     "part_time": false
   },
@@ -43,7 +43,7 @@
     "posted": "5 days ago",
     "activelyHiring": true,
     "earlyApplicant": true,
-    "logo": "https://www.google.com/s2/favicons?domain=adobe.com&sz=128",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Adobe_Corporate_wordmark.svg/1920px-Adobe_Corporate_wordmark.svg.png",
     "work_from_home": true,
     "part_time": true
   },
@@ -59,7 +59,7 @@
     "posted": "3 days ago",
     "activelyHiring": true,
     "earlyApplicant": false,
-    "logo": "https://www.google.com/s2/favicons?domain=amazon.com&sz=128",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Amazon_2024.svg/1920px-Amazon_2024.svg.png",
     "work_from_home": false,
     "part_time": false
   },
@@ -75,7 +75,7 @@
     "posted": "4 days ago",
     "activelyHiring": true,
     "earlyApplicant": true,
-    "logo": "https://www.google.com/s2/favicons?domain=infosys.com&sz=128",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/1920px-Infosys_logo.svg.png",
     "work_from_home": true,
     "part_time": false
   },
@@ -91,7 +91,7 @@
     "posted": "1 day ago",
     "activelyHiring": true,
     "earlyApplicant": true,
-    "logo": "https://www.google.com/s2/favicons?domain=flipkart.com&sz=128",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Flipkart_logo_%282026%29.svg/1920px-Flipkart_logo_%282026%29.svg.png",
     "work_from_home": false,
     "part_time": false
   },
@@ -107,7 +107,7 @@
     "posted": "2 weeks ago",
     "activelyHiring": false,
     "earlyApplicant": false,
-    "logo": "https://www.google.com/s2/favicons?domain=wipro.com&sz=128",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Wipro_new_logo.svg/1920px-Wipro_new_logo.svg.png",
     "work_from_home": true,
     "part_time": false
   },
@@ -123,7 +123,7 @@
     "posted": "5 days ago",
     "activelyHiring": true,
     "earlyApplicant": false,
-    "logo": "https://www.google.com/s2/favicons?domain=oracle.com&sz=128",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/1920px-Oracle_logo.svg.png",
     "work_from_home": false,
     "part_time": false
   },
@@ -139,7 +139,7 @@
     "posted": "6 days ago",
     "activelyHiring": true,
     "earlyApplicant": true,
-    "logo": "https://www.google.com/s2/favicons?domain=tcs.com&sz=128",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Tata_Consultancy_Services.svg/1920px-Tata_Consultancy_Services.svg.png",
     "work_from_home": true,
     "part_time": true
   },
@@ -155,7 +155,7 @@
     "posted": "3 days ago",
     "activelyHiring": true,
     "earlyApplicant": false,
-    "logo": "https://www.google.com/s2/favicons?domain=zoho.com&sz=128",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/ZOHO_logo_2023.svg/1920px-ZOHO_logo_2023.svg.png",
     "work_from_home": false,
     "part_time": false
   },
@@ -171,7 +171,7 @@
   "posted": "1 day ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=meta.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/1920px-Meta_Platforms_Inc._logo.svg.png",
   "work_from_home": true,
   "part_time": false
 },
@@ -187,7 +187,7 @@
   "posted": "3 days ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=ibm.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1920px-IBM_logo.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -203,14 +203,14 @@
   "posted": "4 days ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=canva.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Canva_Logo.svg/1920px-Canva_Logo.svg.png",
   "work_from_home": true,
   "part_time": true
 },
 {
   "id": 14,
   "title": "Content Marketing Intern",
-  "company": "Twitter",
+  "company": "X",
   "location": "Mumbai",
   "stipend": 6000,
   "duration": "3 Months",
@@ -219,7 +219,7 @@
   "posted": "5 days ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=twitter.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/X_%28formerly_Twitter%29_logo_late_2025.svg/960px-X_%28formerly_Twitter%29_logo_late_2025.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -235,7 +235,7 @@
   "posted": "2 days ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=nvidia.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/NVIDIA_logo.svg/1920px-NVIDIA_logo.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -251,7 +251,7 @@
   "posted": "1 week ago",
   "activelyHiring": false,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=capgemini.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Capgemini_New_logo.svg/1920px-Capgemini_New_logo.svg.png",
   "work_from_home": true,
   "part_time": false
 },
@@ -267,7 +267,7 @@
   "posted": "2 weeks ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=zomato.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Zomato_Logo.svg/1920px-Zomato_Logo.svg.png",
   "work_from_home": false,
   "part_time": true
 },
@@ -283,7 +283,7 @@
   "posted": "6 days ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=netflix.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png",
   "work_from_home": true,
   "part_time": false
 },
@@ -299,7 +299,7 @@
   "posted": "4 days ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=paytm.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Paytm_Logo_%28standalone%29.svg/1920px-Paytm_Logo_%28standalone%29.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -315,7 +315,7 @@
   "posted": "5 days ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=swiggy.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Swiggy_Logo.svg/1920px-Swiggy_Logo.svg.png",
   "work_from_home": true,
   "part_time": true
 },
@@ -331,7 +331,7 @@
   "posted": "3 days ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=amazon.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Amazon_2024.svg/1920px-Amazon_2024.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -347,7 +347,7 @@
   "posted": "2 days ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=spotify.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/2024_Spotify_Logo.svg/1920px-2024_Spotify_Logo.svg.png",
   "work_from_home": true,
   "part_time": false
 },
@@ -363,7 +363,7 @@
   "posted": "1 week ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=samsung.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Samsung_Black_icon.svg/1920px-Samsung_Black_icon.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -379,7 +379,7 @@
   "posted": "5 days ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=deloitte.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_of_Deloitte.svg/1920px-Logo_of_Deloitte.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -395,7 +395,7 @@
   "posted": "4 days ago",
   "activelyHiring": false,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=hp.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/960px-HP_logo_2012.svg.png",
   "work_from_home": false,
   "part_time": true
 },
@@ -411,7 +411,7 @@
   "posted": "2 weeks ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=cisco.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1920px-Cisco_logo_blue_2016.svg.png",
   "work_from_home": true,
   "part_time": false
 },
@@ -427,7 +427,7 @@
   "posted": "1 day ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=uber.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Uber_logo_2018.svg/1920px-Uber_logo_2018.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -443,7 +443,7 @@
   "posted": "3 days ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=linkedin.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/LinkedIn_2021.svg/1920px-LinkedIn_2021.svg.png",
   "work_from_home": true,
   "part_time": true
 },
@@ -459,7 +459,7 @@
   "posted": "6 days ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=apple.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/960px-Apple_logo_black.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -475,7 +475,7 @@
   "posted": "2 days ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=pinterest.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pinterest_Logo_3.svg/1920px-Pinterest_Logo_3.svg.png",
   "work_from_home": true,
   "part_time": true
 },
@@ -491,7 +491,7 @@
   "posted": "3 days ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=discord.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Discord_logo.svg/1920px-Discord_logo.svg.png",
   "work_from_home": true,
   "part_time": false
 },
@@ -507,7 +507,7 @@
   "posted": "1 week ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/OpenAI_logo_2025_%28wordmark%29.svg/1920px-OpenAI_logo_2025_%28wordmark%29.svg.png",
   "work_from_home": true,
   "part_time": false
 },
@@ -523,7 +523,7 @@
   "posted": "2 days ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=tesla.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/960px-Tesla_Motors.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -539,7 +539,7 @@
   "posted": "4 days ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=dell.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Dell_logo_2016.svg/960px-Dell_logo_2016.svg.png",
   "work_from_home": false,
   "part_time": true
 },
@@ -555,7 +555,7 @@
   "posted": "5 days ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=hubspot.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/HubSpot_Logo.svg/1920px-HubSpot_Logo.svg.png",
   "work_from_home": true,
   "part_time": true
 },
@@ -571,7 +571,7 @@
   "posted": "2 weeks ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=coindcx.com&sz=128",
+  "logo": "https://coindcx.com/wp-content/uploads/2024/02/coindcx-logo.svg",
   "work_from_home": true,
   "part_time": false
 },
@@ -587,7 +587,7 @@
   "posted": "3 days ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Amazon_Web_Services_2025.svg/1920px-Amazon_Web_Services_2025.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -603,7 +603,7 @@
   "posted": "1 day ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=instagram.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png",
   "work_from_home": true,
   "part_time": true
 },
@@ -619,7 +619,7 @@
   "posted": "4 days ago",
   "activelyHiring": false,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=goldmansachs.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Goldman_Sachs_logo.svg/1920px-Goldman_Sachs_logo.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -635,7 +635,7 @@
   "posted": "6 days ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=phonepe.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/PhonePe_Logo.svg/1920px-PhonePe_Logo.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -651,7 +651,7 @@
   "posted": "2 days ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=oracle.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/1920px-Oracle_logo.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -667,7 +667,7 @@
   "posted": "5 days ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=dribbble.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Dribbble_logo.svg/1920px-Dribbble_logo.svg.png",
   "work_from_home": true,
   "part_time": true
 },
@@ -683,7 +683,7 @@
   "posted": "1 week ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=meesho.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Meesho_logo.png/960px-Meesho_logo.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -699,7 +699,7 @@
   "posted": "3 days ago",
   "activelyHiring": false,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=lenovo.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Lenovo_%282015%29.svg/1920px-Lenovo_%282015%29.svg.png",
   "work_from_home": false,
   "part_time": true
 },
@@ -715,7 +715,7 @@
   "posted": "4 days ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=youtube.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/YouTube_2024.svg/1920px-YouTube_2024.svg.png",
   "work_from_home": true,
   "part_time": true
 },
@@ -731,7 +731,7 @@
   "posted": "2 days ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=snapdeal.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Snapdeal_logo.svg/1920px-Snapdeal_logo.svg.png",
   "work_from_home": true,
   "part_time": true
 },
@@ -747,7 +747,7 @@
   "posted": "6 days ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=intel.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Intel_logo_2023.svg/1920px-Intel_logo_2023.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -763,7 +763,7 @@
   "posted": "1 day ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=olacabs.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/OLA_Electric_logo.svg/1920px-OLA_Electric_logo.svg.png",
   "work_from_home": false,
   "part_time": false
 },
@@ -779,7 +779,7 @@
   "posted": "5 days ago",
   "activelyHiring": true,
   "earlyApplicant": false,
-  "logo": "https://www.google.com/s2/favicons?domain=nvidia.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/NVIDIA_logo.svg/1920px-NVIDIA_logo.svg.png",
   "work_from_home": true,
   "part_time": false
 },
@@ -795,7 +795,7 @@
   "posted": "2 days ago",
   "activelyHiring": true,
   "earlyApplicant": true,
-  "logo": "https://www.google.com/s2/favicons?domain=airbnb.com&sz=128",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1920px-Airbnb_Logo_B%C3%A9lo.svg.png",
   "work_from_home": true,
   "part_time": false
 }
