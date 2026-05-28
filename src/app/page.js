@@ -499,7 +499,7 @@ export default function Home() {
                         Actively hiring
                       </button>
 
-                      <button className="bg-[#FFF4E5] text-[#C77700] px-3 py-1 rounded-full text-[12px]">
+                      <button className="bg-[#FFF4E5] text-[#C77700] px-3 py-1 rounded-full text-[12px] cursor-pointer transition hover:bg-[#ffe0b2]">
                         Apply now
                       </button>
                     </div>
