@@ -26,7 +26,12 @@ export default function Home() {
   const [earlyApplicant, setEarlyApplicant] = useState(false);
   const [womenInternships, setWomenInternships] = useState(false);
   const [activelyHiring, setActivelyHiring] = useState(false);
-  
+  const [showJobOfferInfo, setShowJobOfferInfo] = useState(false);
+  const [showFastResponseInfo, setShowFastResponseInfo] = useState(false);
+  const [showEarlyApplicantInfo, setShowEarlyApplicantInfo] = useState(false);
+  const [showWomenInfo, setShowWomenInfo] = useState(false);
+  const [showActivelyHiringInfo, setShowActivelyHiringInfo] = useState(false);
+
   const [startDate, setStartDate] = useState("");
   const [maxDuration, setMaxDuration] = useState("");
 
@@ -47,19 +52,18 @@ export default function Home() {
     // START DATE
     if (startDate) {
       filtered = filtered.filter(
-        (item) =>
-          new Date(item.start_date) >= new Date(startDate)
+        (item) => new Date(item.start_date) >= new Date(startDate)
       );
     }
-    
-    // PROFILE FILTER
+
+    // PROFILE
     if (profile) {
       filtered = filtered.filter((item) =>
         item.title.toLowerCase().includes(profile.toLowerCase())
       );
     }
 
-    // LOCATION FILTER
+    // LOCATION
     if (location) {
       filtered = filtered.filter((item) =>
         item.location.toLowerCase().includes(location.toLowerCase())
@@ -154,20 +158,20 @@ export default function Home() {
     activelyHiring,
     internships,
   ]);
-    
+
   const clearFilters = () => {
     setProfile("");
     setLocation("");
     setWorkFromHome(false);
     setPartTime(false);
     setStipend(0);
-    
+
     setJobOffer(false);
     setFastResponse(false);
     setEarlyApplicant(false);
     setWomenInternships(false);
     setActivelyHiring(false);
-    
+
     setStartDate("");
     setMaxDuration("");
 
@@ -176,42 +180,59 @@ export default function Home() {
 
   return (
     <div className="bg-[#F8F8F8] min-h-screen">
+
       {/* NAVBAR */}
 
-      <nav className="bg-white border-b border-[#E5E7EB] h-[68px] flex items-center">
-        <div className="max-w-[1180px] mx-auto px-4 w-full flex justify-between items-center">
+      <nav className="bg-white border-b border-[#E5E7EB] h-[64px] flex items-center">
+
+        <div className="max-w-[1080px] mx-auto px-4 w-full flex justify-between items-center">
+
           <img
             src="https://internshala.com/static/images/common/new_internshala_logo.svg"
             alt="logo"
-            className="w-[115px]"
+            className="w-[108px]"
           />
 
-          <div className="flex items-center gap-8 text-[14px] text-[#333]">
-            <p className="hover:text-[#38BDF8] cursor-pointer transition">Internships</p>
-            <p className="hover:text-[#38BDF8] cursor-pointer transition">Courses</p>
-            <p className="hover:text-[#38BDF8] cursor-pointer transition">Jobs</p>
+          <div className="flex items-center gap-7 text-[13px] text-[#333]">
 
-            <button className="bg-[#00A5EC] text-white px-4 py-1.5 rounded-md text-[13px] font-medium hover:bg-[#0088c3] cursor-pointer transition">
+            <p className="hover:text-[#38BDF8] cursor-pointer transition">
+              Internships
+            </p>
+
+            <p className="hover:text-[#38BDF8] cursor-pointer transition">
+              Courses
+            </p>
+
+            <p className="hover:text-[#38BDF8] cursor-pointer transition">
+              Jobs
+            </p>
+
+            <button className="bg-[#00A5EC] text-white px-4 py-1.5 rounded-md text-[12px] font-medium hover:bg-[#0088c3] transition">
               Login
             </button>
+
           </div>
         </div>
       </nav>
 
       {/* MAIN */}
 
-      <div className="max-w-[1180px] mx-auto flex gap-5 px-4 py-7 items-start">
-        {/* FILTERS */}
+      <div className="max-w-[1080px] mx-auto flex gap-5 px-4 py-5 items-start">
 
-        <div className="w-[255px] sticky top-24 self-start">
-          <div className="bg-white border border-[#E5E7EB] rounded-[8px] p-5">
-            <h2 className="text-[16px] font-semibold text-center mb-5 text-[#333]">
+        {/* FILTER SECTION */}
+
+        <div className="w-[270px] sticky top-24 self-start">
+
+          <div className="bg-white border border-[#E5E7EB] rounded-[10px] p-5">
+
+            <h2 className="text-[15px] font-semibold text-center mb-5 text-[#333]">
               Filters
             </h2>
 
             {/* PROFILE */}
 
             <div className="mb-5">
+
               <label className="text-[13px] font-medium text-[#333]">
                 Profile
               </label>
@@ -223,11 +244,13 @@ export default function Home() {
                 onChange={(e) => setProfile(e.target.value)}
                 className="w-full mt-2 border border-[#D1D5DB] rounded-md px-3 py-2 text-[13px] outline-none"
               />
+
             </div>
 
             {/* LOCATION */}
 
             <div className="mb-5">
+
               <label className="text-[13px] font-medium text-[#333]">
                 Location
               </label>
@@ -239,35 +262,45 @@ export default function Home() {
                 onChange={(e) => setLocation(e.target.value)}
                 className="w-full mt-2 border border-[#D1D5DB] rounded-md px-3 py-2 text-[13px] outline-none"
               />
+
             </div>
 
             {/* CHECKBOX */}
 
             <div className="space-y-3 mb-5">
+
               <label className="flex items-center gap-3 text-[13px] text-[#333]">
+
                 <input
                   type="checkbox"
                   checked={workFromHome}
                   onChange={() => setWorkFromHome(!workFromHome)}
                   className="w-4 h-4"
                 />
+
                 Work from home
+
               </label>
 
               <label className="flex items-center gap-3 text-[13px] text-[#333]">
+
                 <input
                   type="checkbox"
                   checked={partTime}
                   onChange={() => setPartTime(!partTime)}
                   className="w-4 h-4"
                 />
+
                 Part-time
+
               </label>
+
             </div>
 
             {/* STIPEND */}
 
             <div className="mb-5">
+
               <p className="text-[13px] font-medium mb-3 text-[#333]">
                 Desired minimum monthly stipend (₹)
               </p>
@@ -290,6 +323,7 @@ export default function Home() {
                 <span>8K</span>
                 <span>10K</span>
               </div>
+
             </div>
 
             {/* VIEW MORE */}
@@ -308,7 +342,10 @@ export default function Home() {
             {showMoreFilters && (
               <div className="mt-5 space-y-4">
 
+                {/* START DATE */}
+
                 <div>
+
                   <p className="text-[13px] font-medium mb-2 text-[#333]">
                     Starting from (or after)
                   </p>
@@ -319,9 +356,13 @@ export default function Home() {
                     onChange={(e) => setStartDate(e.target.value)}
                     className="w-full border border-[#d1d5db] rounded-md px-4 py-3 text-[14px] outline-none bg-white"
                   />
+
                 </div>
 
+                {/* MAX DURATION */}
+
                 <div>
+
                   <p className="text-[13px] font-medium mb-2 text-[#333]">
                     Max. duration (months)
                   </p>
@@ -329,96 +370,212 @@ export default function Home() {
                   <select
                     value={maxDuration}
                     onChange={(e) => setMaxDuration(e.target.value)}
-                    placeholder="Choose duration"
                     className="w-full border border-[#d1d5db] rounded-md px-4 py-3 text-[14px] outline-none bg-white"
                   >
                     <option value="">Choose Duration</option>
                     <option value="1">1 month</option>
                     <option value="2">2 months</option>
                     <option value="3">3 months</option>
+                    <option value="4">4 months</option>
                     <option value="6">6 months</option>
                     <option value="12">12 months</option>
-                    <option value="24">24 months</option>
-                    <option value="36">36 months</option>
                   </select>
+
                 </div>
-                
-                <div className="space-y-3 pt-1">
-                  
-                  <label className="flex items-center gap-3 text-[13px] text-[#333]">
+
+                {/* JOB OFFER */}
+
+                <div className="relative">
+
+                  <label className="flex items-center gap-2 text-[13px] text-[#333]">
+
                     <input
                       type="checkbox"
                       checked={jobOffer}
                       onChange={() => setJobOffer(!jobOffer)}
                       className="w-4 h-4"
                     />
+
                     Internships with job offer
+
+                    <span
+                      onMouseEnter={() => setShowJobOfferInfo(true)}
+                      onMouseLeave={() => setShowJobOfferInfo(false)}
+                      className="w-[15px] h-[15px] rounded-full border border-[#777] text-[10px] flex items-center justify-center cursor-pointer text-[#777]"
+                    >
+                      ?
+                    </span>
+
                   </label>
-                  
-                  <label className="flex items-center gap-3 text-[13px] text-[#333]">
+
+                  {showJobOfferInfo && (
+                    <div className="absolute left-0 top-8 w-[300px] bg-[#2F2F2F] text-white text-[12px] leading-[20px] p-4 rounded-md shadow-lg z-50">
+                      Will show internships which will offer a full-time job to the intern at the end of internship depending on performance
+                    </div>
+                  )}
+
+                </div>
+
+                {/* FAST RESPONSE */}
+
+                <div className="relative">
+
+                  <label className="flex items-center gap-2 text-[13px] text-[#333]">
+
                     <input
                       type="checkbox"
                       checked={fastResponse}
                       onChange={() => setFastResponse(!fastResponse)}
                       className="w-4 h-4"
                     />
+
                     Fast response
+
+                    <span
+                      onMouseEnter={() => setShowFastResponseInfo(true)}
+                      onMouseLeave={() => setShowFastResponseInfo(false)}
+                      className="w-[15px] h-[15px] rounded-full border border-[#777] text-[10px] flex items-center justify-center cursor-pointer text-[#777]"
+                    >
+                      ?
+                    </span>
+
                   </label>
-                  
-                  <label className="flex items-center gap-3 text-[13px] text-[#333]">
+
+                  {showFastResponseInfo && (
+                    <div className="absolute left-0 top-8 w-[300px] bg-[#2F2F2F] text-white text-[12px] leading-[20px] p-4 rounded-md shadow-lg z-50">
+                      Internships where you are likely to get faster response from employers
+                    </div>
+                  )}
+
+                </div>
+
+                {/* EARLY APPLICANT */}
+
+                <div className="relative">
+
+                  <label className="flex items-center gap-2 text-[13px] text-[#333]">
+
                     <input
                       type="checkbox"
                       checked={earlyApplicant}
                       onChange={() => setEarlyApplicant(!earlyApplicant)}
                       className="w-4 h-4"
                     />
+
                     Early applicant
+
+                    <span
+                      onMouseEnter={() => setShowEarlyApplicantInfo(true)}
+                      onMouseLeave={() => setShowEarlyApplicantInfo(false)}
+                      className="w-[15px] h-[15px] rounded-full border border-[#777] text-[10px] flex items-center justify-center cursor-pointer text-[#777]"
+                    >
+                      ?
+                    </span>
+
                   </label>
-                  
-                  <label className="flex items-center gap-3 text-[13px] text-[#333]">
+
+                  {showEarlyApplicantInfo && (
+                    <div className="absolute left-0 top-8 w-[300px] bg-[#2F2F2F] text-white text-[12px] leading-[20px] p-4 rounded-md shadow-lg z-50">
+                      Internships where you will be among first ones to apply and have 3X chances of getting hired
+                    </div>
+                  )}
+
+                </div>
+
+                {/* WOMEN */}
+
+                <div className="relative">
+
+                  <label className="flex items-center gap-2 text-[13px] text-[#333]">
+
                     <input
                       type="checkbox"
                       checked={womenInternships}
                       onChange={() => setWomenInternships(!womenInternships)}
                       className="w-4 h-4"
                     />
+
                     Internships for women
+
+                    <span
+                      onMouseEnter={() => setShowWomenInfo(true)}
+                      onMouseLeave={() => setShowWomenInfo(false)}
+                      className="w-[15px] h-[15px] rounded-full border border-[#777] text-[10px] flex items-center justify-center cursor-pointer text-[#777]"
+                    >
+                      ?
+                    </span>
+
                   </label>
-                  
-                  <label className="flex items-center gap-3 text-[13px] text-[#333]">
+
+                  {showWomenInfo && (
+                    <div className="absolute left-0 top-8 w-[300px] bg-[#2F2F2F] text-white text-[12px] leading-[20px] p-4 rounded-md shadow-lg z-50">
+                      Will show internships which are also open to women (re)starting their careers
+                    </div>
+                  )}
+
+                </div>
+
+                {/* ACTIVELY HIRING */}
+
+                <div className="relative">
+
+                  <label className="flex items-center gap-2 text-[13px] text-[#333]">
+
                     <input
                       type="checkbox"
                       checked={activelyHiring}
                       onChange={() => setActivelyHiring(!activelyHiring)}
                       className="w-4 h-4"
                     />
+
                     Actively hiring
+
+                    <span
+                      onMouseEnter={() => setShowActivelyHiringInfo(true)}
+                      onMouseLeave={() => setShowActivelyHiringInfo(false)}
+                      className="w-[15px] h-[15px] rounded-full border border-[#777] text-[10px] flex items-center justify-center cursor-pointer text-[#777]"
+                    >
+                      ?
+                    </span>
+
                   </label>
-                  
+
+                  {showActivelyHiringInfo && (
+                    <div className="absolute left-0 top-8 w-[300px] bg-[#2F2F2F] text-white text-[12px] leading-[20px] p-4 rounded-md shadow-lg z-50">
+                      Will show internships from companies which are actively hiring interns at the moment
+                    </div>
+                  )}
+
                 </div>
+
               </div>
             )}
 
             {/* CLEAR */}
 
             <div className="flex justify-end mt-5">
+
               <button
                 onClick={clearFilters}
                 className="text-[#008BDC] text-[13px]"
               >
                 Clear all
               </button>
+
             </div>
+
           </div>
 
           {/* SEARCH */}
 
-          <div className="bg-white border border-[#E5E7EB] rounded-[8px] p-4 mt-4">
-            <h2 className="text-[16px] font-semibold text-center mb-4 text-[#333]">
+          <div className="bg-white border border-[#E5E7EB] rounded-[10px] p-4 mt-4">
+
+            <h2 className="text-[15px] font-semibold text-center mb-4 text-[#333]">
               Keyword Search
             </h2>
-            
+
             <div className="flex">
+
               <input
                 type="text"
                 placeholder="e.g. Design, Mumbai"
@@ -426,94 +583,150 @@ export default function Home() {
                 onChange={(e) => setKeyword(e.target.value)}
                 className="flex-1 border border-[#D1D5DB] rounded-l-md px-3 py-2 text-[13px] outline-none"
               />
-              
+
               <button className="bg-[#00A5EC] text-white px-4 rounded-r-md text-[13px] flex items-center justify-center">
                 <FaSearch />
               </button>
+
             </div>
           </div>
         </div>
 
-        {/* RIGHT */}
+        {/* RIGHT SECTION */}
 
-        <div className="flex-1">
-          <h1 className="text-[32px] font-bold text-[#1E293B]">
+        <div className="flex-1 max-w-[690px]">
+
+          <h1 className="text-[30px] font-bold text-[#1F2937] leading-[40px]">
             {filteredInternships.length} Total Internships
           </h1>
 
-          <p className="text-[#6B7280] text-[15px] mt-1 mb-5">
+          <p className="text-[#666] text-[15px] mt-1 mb-5">
             Latest Summer Internships in India
           </p>
 
           <div className="space-y-4">
-            {filteredInternships.length === 0 && (
-              <div className="bg-white border border-[#E5E7EB] rounded-[10px] p-10 text-center">
-
-                <h2 className="text-[22px] font-semibold text-gray-700">
-                  No internships found
-                </h2>
-
-                <p className="text-gray-500 mt-2">
-                  Try changing filters or keyword search
-                </p>
-
-              </div>
-            )}
 
             {filteredInternships.map((item) => (
+
               <div
                 key={item.id}
-                className="bg-white border border-[#E5E7EB] rounded-[10px] p-4 shadow-[0_1px_4px_rgba(0,0,0,0.04)]"
+                className="bg-white border border-[#E5E7EB] rounded-[10px] w-full max-w-[690px] min-h-[190px] px-5 py-4 shadow-sm hover:shadow-md transition"
               >
-                <div className="flex flex-col md:flex-row justify-between gap-4">
-                  <div>
-                    <h2 className="text-[18px] font-semibold text-[#1F2937]">
+
+                <div className="flex justify-between items-start gap-3 h-full">
+
+                  {/* LEFT */}
+
+                  <div className="flex-1">
+
+                    {/* TITLE */}
+
+                    <h2 className="text-[17px] font-semibold leading-[24px] text-[#222]">
                       {item.title}
                     </h2>
 
-                    <p className="text-[#6B7280] text-[14px] mt-1">
+                    {/* COMPANY */}
+
+                    <p className="text-[#666] text-[13px] mt-0.5">
                       {item.company}
                     </p>
 
-                    <div className="flex flex-wrap gap-5 mt-3 text-[13px] text-[#4B5563]">
+                    {/* INFO */}
 
-                      <div className="flex items-center gap-2">
-                        <FaMapMarkerAlt className="text-[#8A8A8A] text-[12px]" />
+                    <div className="flex flex-wrap gap-4 mt-2 text-[12px] text-[#555]">
+
+                      <div className="flex items-center gap-1.5">
+                        <FaMapMarkerAlt className="text-[#8A8A8A] text-[11px]" />
                         <p>{item.location}</p>
                       </div>
 
-                      <div className="flex items-center gap-2">
-                        <FaMoneyBillWave className="text-[#8A8A8A] text-[12px]" />
+                      <div className="flex items-center gap-1.5">
+                        <FaMoneyBillWave className="text-[#8A8A8A] text-[11px]" />
                         <p>₹ {item.stipend.toLocaleString()}/month</p>
                       </div>
 
-                      <div className="flex items-center gap-2">
-                        <FaRegClock className="text-[#8A8A8A] text-[12px]" />
+                      <div className="flex items-center gap-1.5">
+                        <FaRegClock className="text-[#8A8A8A] text-[11px]" />
                         <p>{item.duration}</p>
                       </div>
 
                     </div>
 
-                    <div className="flex gap-3 mt-4">
-                      <button className="bg-[#E8F8EE] text-green-700 px-3 py-1 rounded-full text-[12px]">
+                    {/* DESCRIPTION */}
+
+                    <p className="text-[13px] text-[#555] mt-2 leading-[20px] max-w-[440px] line-clamp-1">
+                      {item.description}
+                    </p>
+
+                    {/* SKILLS */}
+
+                    <div className="flex flex-wrap gap-2 mt-2">
+
+                      {item.skills.map((skill, index) => (
+
+                        <span
+                          key={index}
+                          className="text-[11px] bg-[#F1F5F9] px-2.5 py-1 rounded-full text-[#555]"
+                        >
+                          {skill}
+                        </span>
+
+                      ))}
+
+                    </div>
+
+                    {/* BUTTONS */}
+
+                    <div className="flex gap-2 mt-3 items-center flex-wrap">
+
+                      <button className="bg-[#E8F8EE] text-[#1E8E3E] px-3 py-1 rounded-full text-[11px] font-medium">
                         Actively hiring
                       </button>
 
-                      <button className="bg-[#FFF4E5] text-[#C77700] px-3 py-1 rounded-full text-[12px] cursor-pointer transition hover:bg-[#ffe0b2]">
+                      <button className="bg-[#FFF4E5] text-[#C77700] px-3 py-1 rounded-full text-[11px] font-medium hover:bg-[#FFE7C2] transition">
                         Apply now
                       </button>
+
+                    </div>
+
+                    {/* FOOTER */}
+
+                    <div className="flex items-center gap-2 mt-3 flex-wrap">
+
+                      <span className="text-[12px] text-[#666]">
+                        {item.posted}
+                      </span>
+
+                      {item.earlyApplicant && (
+                        <span className="text-[11px] bg-[#FFF4E5] text-[#C77700] px-2.5 py-1 rounded-full font-medium whitespace-nowrap">
+                          Be an early applicant
+                        </span>
+                      )}
+
                     </div>
                   </div>
 
-                  <div className="w-12 h-12 bg-[#F3F4F6] rounded-xl flex items-center justify-center text-lg">
-                    🏢
-                  </div>
+                  {/* LOGO */}
+
+                  <img
+                    src={item.logo}
+                    alt={item.company}
+                    onError={(e) => {
+                      e.target.src =
+                        "https://cdn-icons-png.flaticon.com/512/3135/3135715.png";
+                    }}
+                    className="w-[42px] h-[42px] object-contain rounded-md border border-[#E5E7EB] p-1 bg-white shrink-0"
+                  />
+
                 </div>
               </div>
             ))}
           </div>
         </div>
       </div>
+
+      {/* FOOTER */}
+
       <footer className="bg-[#0F172A] text-white mt-10">
 
         <div className="max-w-[1180px] mx-auto px-4 py-10">
