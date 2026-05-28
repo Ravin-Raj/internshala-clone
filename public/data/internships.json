@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "title": "Administration Intern",
+    "company": "Google",
+    "location": "Banga (Philippines)",
+    "stipend": 10000,
+    "duration": "2 Months",
+    "work_from_home": false,
+    "part_time": false
+  },
+  {
+    "id": 2,
+    "title": "Administration Intern (Remote)",
+    "company": "Decoy Enterprise",
+    "location": "Work from home",
+    "stipend": 3000,
+    "duration": "3 Months",
+    "work_from_home": true,
+    "part_time": false
+  },
+  {
+    "id": 3,
+    "title": "Android App Development Intern",
+    "company": "Engineering Solutions",
+    "location": "Gurgaon",
+    "stipend": 2500,
+    "duration": "2 Months",
+    "work_from_home": false,
+    "part_time": false
+  },
+  {
+    "id": 4,
+    "title": "Product Management Intern",
+    "company": "Engineering Solutions",
+    "location": "Gurgaon",
+    "stipend": 3000,
+    "duration": "3 Months",
+    "work_from_home": false,
+    "part_time": false
+  },
+  {
+    "id": 5,
+    "title": "Brand Management Intern",
+    "company": "Google",
+    "location": "Delhi",
+    "stipend": 9500,
+    "duration": "3 Months",
+    "work_from_home": false,
+    "part_time": true
+  },
+  {
+    "id": 6,
+    "title": "Business Development Intern",
+    "company": "Infosys",
+    "location": "Mumbai",
+    "stipend": 8500,
+    "duration": "6 Months",
+    "work_from_home": true,
+    "part_time": false
+  },
+  {
+    "id": 7,
+    "title": "UI/UX Design Intern",
+    "company": "Adobe",
+    "location": "Bangalore",
+    "stipend": 7500,
+    "duration": "4 Months",
+    "work_from_home": false,
+    "part_time": true
+  },
+  {
+    "id": 8,
+    "title": "Marketing Intern",
+    "company": "Amazon",
+    "location": "Chennai",
+    "stipend": 8000,
+    "duration": "2 Months",
+    "work_from_home": true,
+    "part_time": false
+  },
+  {
+    "id": 9,
+    "title": "Frontend Developer Intern",
+    "company": "Microsoft",
+    "location": "Hyderabad",
+    "stipend": 8500,
+    "duration": "6 Months",
+    "work_from_home": true,
+    "part_time": false
+  },
+  {
+    "id": 10,
+    "title": "Data Science Intern",
+    "company": "TCS",
+    "location": "Pune",
+    "stipend": 7500,
+    "duration": "4 Months",
+    "work_from_home": false,
+    "part_time": false
+  },
+  {
+    "id": 11,
+    "title": "Content Writing Intern",
+    "company": "Zomato",
+    "location": "Bangalore",
+    "stipend": 4000,
+    "duration": "3 Months",
+    "work_from_home": true,
+    "part_time": true
+  },
+  {
+    "id": 12,
+    "title": "HR Intern",
+    "company": "Accenture",
+    "location": "Gurgaon",
+    "stipend": 6000,
+    "duration": "5 Months",
+    "work_from_home": false,
+    "part_time": false
+  },
+  {
+    "id": 13,
+    "title": "Cyber Security Intern",
+    "company": "Wipro",
+    "location": "Noida",
+    "stipend": 7000,
+    "duration": "6 Months",
+    "work_from_home": false,
+    "part_time": false
+  },
+  {
+    "id": 14,
+    "title": "Machine Learning Intern",
+    "company": "IBM",
+    "location": "Bangalore",
+    "stipend": 12000,
+    "duration": "6 Months",
+    "work_from_home": true,
+    "part_time": false
+  },
+  {
+    "id": 15,
+    "title": "Finance Intern",
+    "company": "Deloitte",
+    "location": "Mumbai",
+    "stipend": 6500,
+    "duration": "4 Months",
+    "work_from_home": false,
+    "part_time": true
+  },
+  {
+    "id": 16,
+    "title": "Graphic Design Intern",
+    "company": "Canva",
+    "location": "Remote",
+    "stipend": 5000,
+    "duration": "3 Months",
+    "work_from_home": true,
+    "part_time": true
+  },
+  {
+    "id": 17,
+    "title": "Software Testing Intern",
+    "company": "Zoho",
+    "location": "Chennai",
+    "stipend": 5500,
+    "duration": "5 Months",
+    "work_from_home": false,
+    "part_time": false
+  },
+  {
+    "id": 18,
+    "title": "Cloud Computing Intern",
+    "company": "Oracle",
+    "location": "Hyderabad",
+    "stipend": 10000,
+    "duration": "6 Months",
+    "work_from_home": true,
+    "part_time": false
+  },
+  {
+    "id": 19,
+    "title": "Video Editing Intern",
+    "company": "JioCinema",
+    "location": "Mumbai",
+    "stipend": 4500,
+    "duration": "2 Months",
+    "work_from_home": true,
+    "part_time": true
+  },
+  {
+    "id": 20,
+    "title": "DevOps Intern",
+    "company": "Red Hat",
+    "location": "Pune",
+    "stipend": 11000,
+    "duration": "6 Months",
+    "work_from_home": false,
+    "part_time": false
+  },
+  {
+    "id": 21,
+    "title": "React Developer Intern",
+    "company": "Infosys",
+    "location": "Bangalore",
+    "stipend": 9000,
+    "duration": "4 Months",
+    "work_from_home": true,
+    "part_time": false
+    },
+    {
+    "id": 22,
+    "title": "Java Developer Intern",
+    "company": "Wipro",
+    "location": "Hyderabad",
+    "stipend": 7000,
+    "duration": "6 Months",
+    "work_from_home": false,
+    "part_time": false
+    },
+    {
+    "id": 23,
+    "title": "Python Developer Intern",
+    "company": "Zoho",
+    "location": "Chennai",
+    "stipend": 8500,
+    "duration": "3 Months",
+    "work_from_home": true,
+    "part_time": false
+    },
+    {
+    "id": 24,
+    "title": "Backend Developer Intern",
+    "company": "IBM",
+    "location": "Pune",
+    "stipend": 9500,
+    "duration": "5 Months",
+    "work_from_home": false,
+    "part_time": false
+    },
+    {
+    "id": 25,
+    "title": "AI Engineer Intern",
+    "company": "OpenAI",
+    "location": "Remote",
+    "stipend": 15000,
+    "duration": "6 Months",
+    "work_from_home": true,
+    "part_time": false
+    },
+    {
+    "id": 26,
+    "title": "Cyber Security Intern",
+    "company": "Tech Mahindra",
+    "location": "Noida",
+    "stipend": 6500,
+    "duration": "4 Months",
+    "work_from_home": false,
+    "part_time": false
+    },
+    {
+    "id": 27,
+    "title": "Full Stack Intern",
+    "company": "Capgemini",
+    "location": "Mumbai",
+    "stipend": 10000,
+    "duration": "6 Months",
+    "work_from_home": true,
+    "part_time": false
+    },
+    {
+    "id": 28,
+    "title": "Business Analyst Intern",
+    "company": "Deloitte",
+    "location": "Delhi",
+    "stipend": 8000,
+    "duration": "2 Months",
+    "work_from_home": false,
+    "part_time": true
+    },
+    {
+    "id": 29,
+    "title": "Graphic Designer Intern",
+    "company": "Canva",
+    "location": "Remote",
+    "stipend": 5000,
+    "duration": "3 Months",
+    "work_from_home": true,
+    "part_time": true
+    },
+    {
+    "id": 30,
+    "title": "Cloud Engineer Intern",
+    "company": "Oracle",
+    "location": "Hyderabad",
+    "stipend": 12000,
+    "duration": "6 Months",
+    "work_from_home": false,
+    "part_time": false
+    }
+]
