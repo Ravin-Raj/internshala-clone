@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 import {
   FaMapMarkerAlt,
@@ -36,6 +37,64 @@ export default function Home() {
   const [maxDuration, setMaxDuration] = useState("");
 
   const [keyword, setKeyword] = useState("");
+
+  const [showInternshipMenu, setShowInternshipMenu] = useState(false);
+
+  const [showCourseMenu, setShowCourseMenu] = useState(false);
+  const [showJobMenu, setShowJobMenu] = useState(false);
+
+  const [showNotification, setShowNotification] = useState(false);
+
+  const internshipMenu = {
+  "Top Locations": [
+    "Work From Home",
+    "Internship in Bangalore",
+    "Internship in Delhi",
+    "Internship in Hyderabad",
+    "Internship in Mumbai",
+    "Internship in Chennai",
+    "Internship in Pune",
+    "International Internship",
+  ],
+
+  Profile: [
+    "Computer Science Internship",
+    "Marketing Internship",
+    "Finance Internship",
+    "Graphic Design Internship",
+    "Architecture Internship",
+    "Mechanical Internship",
+    "HR Internship",
+    "Digital Marketing Internship",
+    "Content Writing Internship",
+  ],
+
+  "Top Categories": [
+    "Engineering Internship",
+    "Business/MBA Internship",
+    "Humanities Internship",
+    "Science Internship",
+    "Internships with Job Offer",
+    "Part-Time Jobs/Internships",
+    "Internships for Women",
+  ],
+
+  "Explore More Internships": [
+    "Internships by Category",
+    "Internships by Location",
+    "Internships by Company",
+  ],
+
+  "Career Launchpads": [
+    "Web Development Course",
+    "Data Science Course",
+    "Digital Marketing Course",
+    "HR Management Course",
+  ],
+};
+
+const [activeInternship, setActiveInternship] =
+  useState("Top Locations");
 
   useEffect(() => {
     fetch("/data/internships.json")
@@ -113,7 +172,7 @@ export default function Home() {
     // FAST RESPONSE
     if (fastResponse) {
       filtered = filtered.filter(
-        (item) => item.duration.includes("2")
+        (item) => parseInt(item.duration) <= 2
       );
     }
 
@@ -183,45 +242,259 @@ export default function Home() {
 
       {/* NAVBAR */}
 
-      <nav className="bg-white border-b border-[#E5E7EB] h-[64px] flex items-center">
+      <nav className="bg-white border-b border-[#E5E7EB] h-[72px] sticky top-0 z-50">
+        <div className="max-w-[1280px] mx-auto px-4 h-full flex items-center justify-between">
 
-        <div className="max-w-[1080px] mx-auto px-4 w-full flex justify-between items-center">
+          {/* LEFT SECTION */}
 
-          <img
-            src="https://internshala.com/static/images/common/new_internshala_logo.svg"
-            alt="logo"
-            className="w-[108px]"
-          />
+          <div className="flex items-center gap-10">
 
-          <div className="flex items-center gap-7 text-[13px] text-[#333]">
+            {/* LOGO */}
 
-            <p className="hover:text-[#38BDF8] cursor-pointer transition">
-              Internships
-            </p>
+            <img
+              src="https://internshala.com/static/images/common/new_internshala_logo.svg"
+              alt="Internshala"
+              className="w-[135px] cursor-pointer transition hover:scale-105"
+            />
 
-            <p className="hover:text-[#38BDF8] cursor-pointer transition">
-              Courses
-            </p>
+            {/* MENU */}
 
-            <p className="hover:text-[#38BDF8] cursor-pointer transition">
-              Jobs
-            </p>
+            <div className="flex items-center gap-1 text-[14px] font-semibold text-[#333]">
 
-            <button className="bg-[#00A5EC] text-white px-4 py-1.5 rounded-md text-[12px] font-medium hover:bg-[#0088c3] transition">
+              {/* INTERNSHIPS */}
+
+              <div
+                className="relative h-full flex items-center"
+                onMouseEnter={() => setShowInternshipMenu(true)}
+                onMouseLeave={() => setShowInternshipMenu(false)}
+              >
+
+                <button
+                  className={`h-[72px] px-6 flex items-center gap-2 cursor-pointer border-b-[3px] transition-all duration-200 ${
+                    showInternshipMenu
+                      ? "border-[#00A5EC] bg-[#F2FAFD] text-[#00A5EC]"
+                      : "border-transparent hover:bg-[#F8FAFC]"
+                  }`}
+                >
+                  Internships
+                  {showInternshipMenu ? (
+                    <FaChevronUp size={12} />
+                  ) : (
+                    <FaChevronDown size={12} />
+                  )}
+                </button>
+
+                <div
+                  className={`absolute top-full left-[-120px] bg-white shadow-xl border border-[#E5E7EB] rounded-b-xl w-[980px] min-h-[470px] z-50 ${
+                    showInternshipMenu ? "flex" : "hidden"
+                  }`}
+                >
+
+                  {/* Sidebar */}
+
+                  <div className="w-[260px] border-r border-[#E5E7EB] bg-white py-4">
+
+                    {Object.keys(internshipMenu).map((menu) => (
+                      <div
+                        key={menu}
+                        onMouseEnter={() => setActiveInternship(menu)}
+                        className={`px-5 py-4 cursor-pointer text-[15px] font-medium transition-all ${
+                          activeInternship === menu
+                            ? "bg-[#EAF8FD] text-[#00A5EC] rounded-r-full"
+                            : "text-[#444]"
+                        }`}
+                      >
+                        {menu}
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Content */}
+
+                  <div className="flex-1 px-8 py-6">
+
+                    <div className="grid grid-cols-1 gap-5">
+
+                      {internshipMenu[activeInternship].map((item) => (
+                        <p
+                          key={item}
+                          className="text-[15px] text-[#555] hover:text-[#00A5EC] cursor-pointer"
+                        >
+                          {item}
+                        </p>
+                      ))}
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              {/* COURSES */}
+
+              <div
+                className="relative h-full flex items-center"
+                onMouseEnter={() => setShowCourseMenu(true)}
+                onMouseLeave={() => setShowCourseMenu(false)}
+              >
+                <button
+                  className={`h-[72px] px-6 flex items-center gap-2 cursor-pointer border-b-[3px] transition-all duration-200 ${
+                    showCourseMenu
+                      ? "border-[#00A5EC] bg-[#F2FAFD] text-[#00A5EC]"
+                      : "border-transparent hover:bg-[#F8FAFC]"
+                  }`}
+                >
+                  Courses
+                  {showCourseMenu ? (
+                    <FaChevronUp size={12} />
+                  ) : (
+                    <FaChevronDown size={12} />
+                  )}
+                </button>
+
+                    <div
+                      className={`absolute left-0 top-[100%] w-[320px] bg-white rounded-xl shadow-xl z-50 ${
+                        showCourseMenu ? "block" : "hidden"
+                      }`}
+                  >
+
+                  <div className="p-5 space-y-4 text-sm">
+
+                    <p className="hover:text-[#00A5EC] cursor-pointer">
+                      Certification Courses
+                    </p>
+
+                    <p className="hover:text-[#00A5EC] cursor-pointer">
+                      Career Launchpads
+                    </p>
+
+                    <p className="hover:text-[#00A5EC] cursor-pointer">
+                      Online Degrees
+                    </p>
+
+                    <p className="hover:text-[#00A5EC] cursor-pointer">
+                      Study Abroad
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              {/* JOBS */}
+
+              <div
+                className="relative h-full flex items-center"
+                onMouseEnter={() => setShowJobMenu(true)}
+                onMouseLeave={() => setShowJobMenu(false)}
+              >
+                <button
+                  className={`h-[72px] px-6 flex items-center gap-2 cursor-pointer border-b-[3px] transition-all duration-200 ${
+                    showJobMenu
+                      ? "border-[#00A5EC] bg-[#F2FAFD] text-[#00A5EC]"
+                      : "border-transparent hover:bg-[#F8FAFC]"
+                  }`}
+                >
+                  Jobs
+                  {showJobMenu ? (
+                    <FaChevronUp size={12} />
+                  ) : (
+                    <FaChevronDown size={12} />
+                  )}
+                </button>
+
+                <div
+                  className={`absolute left-0 top-[100%] w-[350px] bg-white rounded-xl shadow-xl z-50 ${
+                    showJobMenu ? "block" : "hidden"
+                  }`}
+                  >
+
+                  <div className="p-5 space-y-4 text-sm">
+
+                    <p className="hover:text-[#00A5EC] cursor-pointer">
+                      Top Locations
+                    </p>
+
+                    <p className="hover:text-[#00A5EC] cursor-pointer">
+                      Job Categories
+                    </p>
+
+                    <p className="hover:text-[#00A5EC] cursor-pointer">
+                      Work From Home Jobs
+                    </p>
+
+                    <p className="hover:text-[#00A5EC] cursor-pointer">
+                      Fresher Jobs
+                    </p>
+
+                    <p className="hover:text-[#00A5EC] cursor-pointer">
+                      Remote Jobs
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* RIGHT SECTION */}
+
+          <div className="flex items-center gap-5">
+
+            {/* NOTIFICATION */}
+
+            <div className="relative">
+              <button
+                onClick={() => setShowNotification(true)}
+                className="text-xl cursor-pointer"
+              >
+                🔔
+              </button>
+
+              {showNotification && (
+                <div
+                  onMouseLeave={() => setShowNotification(false)}
+                  className="absolute right-[-140px] top-[52px] w-[380px] bg-white rounded-lg shadow-xl border border-[#E5E7EB] p-5 z-[999]"
+                >
+                  <p className="text-[14px] text-[#555] leading-7">
+                    You have not yet received any message through chat.
+                    Chat can be started only by the companies that you have applied to.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* REGISTER */}
+
+            <button className="border border-[#00A5EC] text-[#00A5EC] px-5 py-2 rounded-md text-sm font-medium cursor-pointer hover:bg-[#F0FAFF]">
+              Register
+            </button>
+
+            {/* LOGIN */}
+
+            <button className="bg-[#00A5EC] text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer hover:bg-[#0088c7]">
               Login
             </button>
 
           </div>
+
         </div>
       </nav>
 
       {/* MAIN */}
 
-      <div className="max-w-[1080px] mx-auto flex gap-5 px-4 py-5 items-start">
+      <div className="max-w-[1080px] mx-auto flex gap-5 px-4 py-5 h-[calc(100vh-64px)] overflow-hidden">
 
         {/* FILTER SECTION */}
 
-        <div className="w-[270px] sticky top-24 self-start">
+        <div className="w-[270px] h-full overflow-y-auto pr-2">
 
           <div className="bg-white border border-[#E5E7EB] rounded-[10px] p-5">
 
@@ -594,7 +867,7 @@ export default function Home() {
 
         {/* RIGHT SECTION */}
 
-        <div className="flex-1 max-w-[690px]">
+        <div className="flex-1 max-w-[690px] h-full overflow-y-auto pr-2">
 
           <h1 className="text-[30px] font-bold text-[#1F2937] leading-[40px]">
             {filteredInternships.length} Total Internships
@@ -610,7 +883,7 @@ export default function Home() {
 
               <div
                 key={item.id}
-                className="bg-white border border-[#E5E7EB] rounded-[10px] w-full max-w-[690px] min-h-[190px] px-5 py-4 shadow-sm hover:shadow-md transition"
+                className="bg-white border border-[#E5E7EB] rounded-xl w-full max-w-[690px] min-h-[190px] px-5 py-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
 
                 <div className="flex justify-between items-start gap-3 h-full">
@@ -712,7 +985,7 @@ export default function Home() {
                     src={item.logo}
                     alt={item.company}
                     onError={(e) => {
-                      e.target.src =
+                      e.currentTarget.src =
                         "https://cdn-icons-png.flaticon.com/512/3135/3135715.png";
                     }}
                     className="w-[42px] h-[42px] object-contain rounded-md border border-[#E5E7EB] p-1 bg-white shrink-0"
