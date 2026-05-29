@@ -434,6 +434,14 @@ const [activeInternship, setActiveInternship] =
                       Remote Jobs
                     </p>
 
+                    <p className="hover:text-[#00A5EC] cursor-pointer">
+                      Marketing Jobs
+                    </p>
+
+                    <p className="hover:text-[#00A5EC] cursor-pointer">
+                      Engineering Jobs
+                    </p>
+
                   </div>
 
                 </div>
