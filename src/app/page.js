@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FiFilter } from "react-icons/fi";
 
 import {
   FaMapMarkerAlt,
@@ -506,9 +507,12 @@ const [activeInternship, setActiveInternship] =
 
           <div className="bg-white border border-[#E5E7EB] rounded-[10px] p-5">
 
-            <h2 className="text-[15px] font-semibold text-center mb-5 text-[#333]">
-              Filters
-            </h2>
+            <div className="flex items-center justify-center gap-2 mb-6">
+              <FiFilter className="text-[#00A5EC] text-[20px]" />
+              <h2 className="text-[18px] font-semibold text-[#333]">
+                Filters
+              </h2>
+            </div>
 
             {/* PROFILE */}
 
@@ -877,11 +881,11 @@ const [activeInternship, setActiveInternship] =
 
         <div className="flex-1 max-w-[690px] h-full overflow-y-auto pr-2">
 
-          <h1 className="text-[30px] font-bold text-[#1F2937] leading-[40px]">
+          <h1 className="text-[25px] font-bold text-[#1F2937] leading-[40px] text-center">
             {filteredInternships.length} Total Internships
           </h1>
 
-          <p className="text-[#666] text-[15px] mt-1 mb-5">
+          <p className="text-[#666] text-[12px] mt-1 mb-5 text-center">
             Latest Summer Internships in India
           </p>
 
